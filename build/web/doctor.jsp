@@ -5,7 +5,6 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Service" %>
-<%@ page import="dal.DAO" %>
 <%@ page import="java.util.List" %>
 
 <%@taglib  prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>

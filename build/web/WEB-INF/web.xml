@@ -4,44 +4,29 @@
         <welcome-file>home1.jsp</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>viewPatientList</servlet-name>
+        <servlet-name>ViewPatientList</servlet-name>
         <servlet-class>controller.patient.PatientList</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ApprovedAppointmentList</servlet-name>
+        <servlet-name>ViewApprovedAppointmentList</servlet-name>
         <servlet-class>controller.appointment.ApprovedAppointmentList</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>PatientAppointmentList</servlet-name>
+        <servlet-name>ViewPatientAppointmentList</servlet-name>
         <servlet-class>controller.appointment.PatientAppointmentList</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>updateAppointmentStatus</servlet-name>
+        <servlet-name>UpdateAppointmentStatus</servlet-name>
         <servlet-class>controller.appointment.UpdateAppointmentStatus</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SendConfirmationEmailServlet</servlet-name>
+        <servlet-name>SendConfirmationEmail</servlet-name>
         <servlet-class>Service.Email.SendConfirmationEmailServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ValidatedAppointmentList</servlet-name>
+        <servlet-name>ViewValidatedAppointmentList</servlet-name>
         <servlet-class>controller.appointment.ValidatedAppointmentList</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>viewPatientList</servlet-name>
-        <url-pattern>/viewpatientlist</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ApprovedAppointmentList</servlet-name>
-        <url-pattern>/viewApprovedAppointmentList
-    <servlet-mapping>
-        <servlet-name>PatientAppointmentList</servlet-name>
-        <url-pattern>/viewPatientAppointmentList</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>updateAppointmentStatus</servlet-name>
-        <url-pattern>/updateAppointmentStatus</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>ajaxServlet</servlet-name>
         <servlet-class>com.vnpay.common.ajaxServlet</servlet-class>
@@ -59,6 +44,30 @@
         <servlet-class>com.vnpay.common.vnpayRefund</servlet-class>
     </servlet>
     <servlet-mapping>
+        <servlet-name>ViewPatientList</servlet-name>
+        <url-pattern>/viewpatientlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewApprovedAppointmentList</servlet-name>
+        <url-pattern>/viewApprovedAppointmentList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewPatientAppointmentList</servlet-name>
+        <url-pattern>/viewPatientAppointmentList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateAppointmentStatus</servlet-name>
+        <url-pattern>/updateAppointmentStatus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendConfirmationEmail</servlet-name>
+        <url-pattern>/sendconfirmationemail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewValidatedAppointmentList</servlet-name>
+        <url-pattern>/viewValidatedAppointmentList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ajaxServlet</servlet-name>
         <url-pattern>/vnpayajax/*</url-pattern>
     </servlet-mapping>
@@ -74,17 +83,7 @@
         <servlet-name>vnpayRefund</servlet-name>
         <url-pattern>/vnpayrefund/*</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SendConfirmationEmailServlet</servlet-name>
-        <url-pattern>/sendconfirmationemail</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>viewAppointmentNeedConfirm</servlet-name>
-        <url-pattern>/viewConfirm</url-pattern>
-    </servlet-mapping>
     <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
+        <session-timeout>30</session-timeout>   
     </session-config>
 </web-app>

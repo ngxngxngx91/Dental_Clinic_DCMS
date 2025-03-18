@@ -24,7 +24,7 @@ import dao.EmailDAO;
  *
  * @author ntawo
  */
-@WebServlet(name = "UpdateAppointmentStatusServlet", urlPatterns = {"/updateAppointmentStatus"})
+@WebServlet(name = "UpdateAppointmentStatus", urlPatterns = {"/updateAppointmentStatus"})
 public class UpdateAppointmentStatus extends HttpServlet {
 
     /**

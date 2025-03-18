@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Service" %>
-<%@ page import="dal.DAO" %>
+<%@ page import="dao.ServiceDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.text.NumberFormat" %>
 
@@ -130,7 +130,7 @@
 
 
                     <%
-                        DAO dao = new DAO();
+                        ServiceDAO dao = new ServiceDAO();
                         List<Service> services = dao.getService();
                         for (Service service : services) {
                     %>
